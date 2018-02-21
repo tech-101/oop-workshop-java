@@ -25,6 +25,10 @@ public class CustomerService {
         return customerRepository.findById(customerId) != null;
     }
 
+    public Customer getCustomer(String customerId) {
+        return customerRepository.findById(customerId);
+    }
+
     public boolean hasEmail(String customerId) {
         Customer customer = customerRepository.findById(customerId);
         return customer.getEmail() != null;
@@ -46,10 +50,14 @@ public class CustomerService {
         return order;
     }
 
+    public Product findProduct(String productName) {
+        return productRepository.findByName(productName);
+    }
+
     public Money totalOrderCost(Order order) {
         Money total = Money.zero(CurrencyUnit.EUR);
         for (Product p : order.getProducts()) {
-            total.plus(p.getPrice());
+            total = total.plus(p.getPrice());
         }
         return total;
     }

@@ -38,6 +38,15 @@ public class ProductRepository {
         return null;
     }
 
+    public Product findByName(String productName) {
+        for (Product p : productData) {
+            if (productName.equals(p.getProductName())) {
+                return p;
+            }
+        }
+        return null;
+    }
+
     public Set<Product> findAll() {
         return productData;
     }
