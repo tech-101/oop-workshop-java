@@ -1,4 +1,4 @@
-package com.netlight.tech101.oop.exercise2;
+package com.netlight.tech101.oop.exercise2.support;
 
 import java.math.BigDecimal;
 import java.util.List;

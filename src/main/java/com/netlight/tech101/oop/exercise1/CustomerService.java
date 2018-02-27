@@ -1,8 +1,18 @@
 package com.netlight.tech101.oop.exercise1;
 
+import com.netlight.tech101.oop.exercise1.domain.Customer;
+import com.netlight.tech101.oop.exercise1.domain.Order;
+import com.netlight.tech101.oop.exercise1.domain.Product;
+import com.netlight.tech101.oop.exercise1.infrastructure.CustomerRepository;
+import com.netlight.tech101.oop.exercise1.infrastructure.OrderRepository;
+import com.netlight.tech101.oop.exercise1.infrastructure.ProductRepository;
+import com.netlight.tech101.oop.exercise1.infrastructure.SmtpMailClient;
 import org.joda.money.CurrencyUnit;
 import org.joda.money.Money;
 
+/**
+ * This class should be refactored!
+ */
 public class CustomerService {
 
     private CustomerRepository customerRepository = CustomerRepository.getInstance();

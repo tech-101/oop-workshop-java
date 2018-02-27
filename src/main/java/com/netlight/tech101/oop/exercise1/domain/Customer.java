@@ -1,4 +1,4 @@
-package com.netlight.tech101.oop.exercise1;
+package com.netlight.tech101.oop.exercise1.domain;
 
 import java.util.UUID;
 

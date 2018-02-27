@@ -1,4 +1,6 @@
-package com.netlight.tech101.oop.exercise1;
+package com.netlight.tech101.oop.exercise1.infrastructure;
+
+import com.netlight.tech101.oop.exercise1.domain.Order;
 
 import java.util.HashSet;
 import java.util.Set;

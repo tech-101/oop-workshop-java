@@ -1,5 +1,6 @@
-package com.netlight.tech101.oop.exercise1;
+package com.netlight.tech101.oop.exercise1.infrastructure;
 
+import com.netlight.tech101.oop.exercise1.domain.Product;
 import org.joda.money.Money;
 
 import java.util.HashSet;
