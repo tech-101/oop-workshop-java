@@ -37,7 +37,7 @@ public class SmsHandlerTest {
 
     @Test
     public void testTotalSent() {
-        String response = smsHandler.handleSmsRequest("TOTAL-SENT-FFRITZ", DEVICE_ID);
+        String response = smsHandler.handleSmsRequest("TOTALSENT-FFRITZ", DEVICE_ID);
         assertEquals("ERR – NO USER", response);
     }
 
